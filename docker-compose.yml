@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  mysqldb:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: customerdatabase
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: password
+    ports:
+      - 3306:3306
